@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    <form method="POST" action="/new">
+        h1= 'Make A Comment'
+        h3= 'Username'
+        input(type='text' name='messageUser')
+        h3= 'Comment'
+        textarea(name="messageText", cols="30", rows="10")
+        br
+        input(type='submit')
+    </form>
